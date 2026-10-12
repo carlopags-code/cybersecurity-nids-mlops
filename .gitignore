@@ -1,0 +1,17 @@
+# Exclude Python runtime caching
+__pycache__/
+*.pyc
+
+# Safeguard local raw data (Avoid committing massive txt/csv packet captures)
+data/raw/
+data/processed/
+*.txt
+*.csv
+
+# Safeguard ML model artifacts
+models/*.joblib
+models/*.pkl
+
+# Exclude notebook checkmarks and credentials
+.ipynb_checkpoints/
+.env
